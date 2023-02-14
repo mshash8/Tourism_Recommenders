@@ -1,7 +1,6 @@
 # Tourism Recommenders
 
-## Project Type
-Tool (Recommendation System).
+## Project Type - Tool (Recommendation System)
 This tool uses user inputs (such as budget, location, time of visit, etc.) and current weather conditions for a location to make recommendations for places of interest.  
 ## Questions of Interest
 * What are the top rated restaurants near me? 
