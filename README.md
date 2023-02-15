@@ -1,6 +1,6 @@
 # Tourism Recommendation Project
 
-## Project Type - Tool, Data Visualization, Analysis
+## Project Type - Tool
 This portal uses user inputs (such as location, time of visit, interest, etc.) and current weather conditions for a location to make recommendations for places to visit.  
 ## Questions of Interest
 * What are the popular places that I can visit in Seattle in June?
