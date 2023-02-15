@@ -1,8 +1,9 @@
-# Tourism Recommenders
+# Tourism Recommendation Project
 
-## Project Type - Tool (Recommendation System)
-This tool uses user inputs (such as budget, location, time of visit, etc.) and current weather conditions for a location to make recommendations for places of interest.  
+## Project Type - Tool
+This portal uses user inputs (such as location, time of visit, interest, etc.) and current weather conditions for a location to make recommendations for places to visit.  
 ## Questions of Interest
+* What are the popular places that I can visit in Seattle in June?
 * What are the top rated restaurants near me? 
 * Are there any art museums near me?
 * What tourist spots can I visit in Seattle?
