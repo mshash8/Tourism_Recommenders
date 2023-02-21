@@ -33,18 +33,18 @@ This project takes data from two different sources - one for extracting the deta
 ### Implicit Use Cases:
 1. **Recommend the best rated restaurants nearby that serve vegetarian food and are wheelchair friendly**
 
-User: Enters their location, interest(restaurants), specifications(serves vegetarian food and is wheel chair friendly)
+    User: Enters their location, interest(restaurants), specifications(serves vegetarian food and is wheel chair friendly)
 
-Portal: Displays a set of restaurants that follow these specifications
+    Portal: Displays a set of restaurants that follow these specifications
 
 2. **Recommend sightseeing spots to visit in Seattle on a sunny day**
 
-User: Enters their location, interest(sightseeing/tourist spots)
+    User: Enters their location, interest(sightseeing/tourist spots)
 
-Portal: Displays the top sightseeing spots to visit, when the weather for the specified timings is sunny.
+    Portal: Displays the top sightseeing spots to visit, when the weather for the specified timings is sunny.
 
 3. **Recommend a list of activities to do on a rainy day in Seattle for children**
 
-User: Enters their location, interest(adventure activities)
+    User: Enters their location, interest(adventure activities)
 
-Portal: Displays the top activities spots to visit, when the weather for the specified timings is rainy.
+    Portal: Displays the top activities spots to visit, when the weather for the specified timings is rainy.
