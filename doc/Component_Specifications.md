@@ -50,7 +50,7 @@
 * Outputs  
   - The recommended tourist spot.
 
-## Preliminary plan. A list of tasks in priority order.
+## Preliminary plan(Milestones) - A list of tasks in priority order.
 
 ### Week 1 (14th-21st February, 2023)
 * Create a comprehensive docs folder with functional specifications and component specifications.
