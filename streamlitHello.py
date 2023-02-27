@@ -16,7 +16,7 @@ st.write(pd.DataFrame({
 }))
 
 # enter your api key here
-api_key = 'AIzaSyDvXY6zrSDLbP_uNCc7UV1zWqobtkk0l7A'
+api_key = 'XXXXXX'
 
 # url variable store url
 url = "https://maps.googleapis.com/maps/api/place/textsearch/json?"
