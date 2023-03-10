@@ -52,15 +52,15 @@ jobs:
           path-to-lcov: coverage.lcov
           flag-name: run ${{ join(matrix.*, ' - ') }}
           parallel: true
-    finish:
-      needs: build_test
-      if: ${{ always() }}
-      runs-on: ubuntu-latest
-      steps:
-        - name: Coveralls finished
-          uses: coverallsapp/github-action@master
-          with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
-            parallel-finished: true
-            carryforward: "run-3.7,run-3.8,run-3.9,run-3.10"
+  finish:
+    needs: build_test
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls finished
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true
+          carryforward: "run-3.7,run-3.8,run-3.9,run-3.10"
 
