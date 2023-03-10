@@ -4,8 +4,8 @@ of our application
 """
 
 import streamlit as st
-import backend
 import constants
+import backend
 
 r = st.number_input("Minimum rating you want 1-5")
 b = st.number_input("Price level 1-5")
