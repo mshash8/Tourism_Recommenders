@@ -1,3 +1,7 @@
+"""
+This module is used to store all the constants
+used in this project
+"""
 WEATHER_CODES = {
 '1'	: 'Clear',
 '2'	: 'Fair',

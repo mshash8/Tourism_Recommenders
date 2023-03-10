@@ -1,7 +1,11 @@
+"""
+This module is used to run the frontend
+of our application
+"""
+
 import streamlit as st
-import pandas as pd
-import constants
 import backend
+import constants
 
 r = st.number_input("Minimum rating you want 1-5")
 b = st.number_input("Price level 1-5")
@@ -21,7 +25,8 @@ st.write(meteostat_api_response)
 
 
 query = backend.basic_rules(meteostat_api_response, location)
-google_api_response = backend.call_google_api(constants.GOOGLE_MAPS_API, query, api_key, 'opening_hours')
+google_api_response = backend.call_google_api(constants.GOOGLE_MAPS_API
+                                    , query, api_key, 'opening_hours')
 st.write(google_api_response)
 
 
