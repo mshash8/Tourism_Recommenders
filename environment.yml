@@ -14,3 +14,5 @@ dependencies:
       - semver==2.13.0
       - streamlit==1.19.0
       - toml==0.10.2
+      - geocoder==1.38.1
+      - geopy==2.2.0
