@@ -16,3 +16,4 @@ dependencies:
       - toml
       - geocoder
       - geopy
+      - pylint
