@@ -4,7 +4,7 @@ of our application
 """
 
 import streamlit as st
-import constants
+import recommender_engine.constants as constants
 import backend
 
 r = st.number_input("Minimum rating you want 1-5")

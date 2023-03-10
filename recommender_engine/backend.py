@@ -8,7 +8,7 @@ import geocoder
 from geopy.geocoders import Nominatim
 from meteostat import Stations, Hourly
 import requests
-import constants
+import recommender_engine.constants as constants
 
 
 def call_google_api(url, query, api_key, fields):
