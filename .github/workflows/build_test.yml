@@ -1,1 +1,66 @@
+# name of the workflow
+name: build_test
+
+# the events that triggers this workflow
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# A list of jobs to run as part of the workflow
+jobs:
+  build_test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -el {0}
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Set up conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: tourism_recommenders_environment
+          environment-file: environment.yml
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+          auto-activate-base: false
+      - name: Install additional development dependencies
+        run: |
+          conda install --yes coverage
+      - name: Lint with pylint
+        run: |
+          pylint recommender_engine/*.py
+      - name: Unit tests
+        run: |
+          coverage run -m unittest discover
+          coverage report
+          coverage lcov
+      - name: Report code coverage to Coveralls
+        uses: coverallsapp/github-actions@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.lcov
+          flag-name: run ${{ join(matrix.*, ' - ') }}
+          parallel: true
+    finish:
+      needs: build_test
+      if: ${{ always() }}
+      runs-on: ubuntu-latest
+      steps:
+        - name: Coveralls finished
+          uses: coverallsapp/github-action@master
+          with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            parallel-finished: true
+            carryforward: "run-3.7,run-3.8,run-3.9,run-3.10"
 
