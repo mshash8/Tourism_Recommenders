@@ -2,8 +2,8 @@ name: tourism_recommenders_environment
 channels:
   - defaults
 dependencies:
-  - pip=22.3.1=py310hecd8cb5_0
-  - python=3.10.9=h218abb5_0
+  - pip=22.3.1
+  - python=3.10.9
   - pip:
       - gitpython==3.1.31
       - jsonschema==4.17.3
