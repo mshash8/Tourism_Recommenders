@@ -1,3 +1,6 @@
+"""
+This module is used to setup the package
+"""
 from distutils.core import setup
 
 setup(name='Tourism_Recommenders',
