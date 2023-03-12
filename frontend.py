@@ -1,6 +1,10 @@
+"""
+This module is used to run the frontend
+of our application
+"""
+
 import streamlit as st
-import pandas as pd
-import const
+import recommender_constants
 import backend
 
 r = st.number_input("Minimum rating you want 1-5")
@@ -9,9 +13,10 @@ date = st.date_input("When do you wish to visit (only upto 1 day beyond today")
 time = st.time_input("What time do you wish to visit")
 location = st.text_input("Enter your location or leave blank to use your current location")
 
-api_key = backend.decode_api_key(const.ENCODED_GOOGLE_API_KEY)
+api_key = backend.decode_api_key(recommender_constants.ENCODED_GOOGLE_API_KEY)
 if location == "":
     location = backend.get_user_entered_loc(location)
+
 
 st.write(location)
 
@@ -21,14 +26,15 @@ st.write(meteostat_api_response)
 
 
 query = backend.basic_rules(meteostat_api_response, location)
-google_api_response = backend.call_google_api(const.GOOGLE_MAPS_API, query, api_key, 'opening_hours')
+google_api_response = backend.call_google_api(recommender_constants.GOOGLE_MAPS_API
+                                    , query, api_key, 'opening_hours')
 st.write(google_api_response)
 
 
-## ST.WRITE TO THE FRONT END HERE
+# ST.WRITE TO THE FRONT END HERE
 
-# loc = st.text_input("Enter your location or leave blank to use your current location")
+loc = st.text_input("Enter your location or leave blank to use your current location")
 
-# res = backend.user_entered_loc(loc)
+res = backend.user_entered_loc(loc)
 
-# st.write(res)
+st.write(res)
