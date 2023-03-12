@@ -1,3 +1,3 @@
 [MAIN]
 
-disable=import-error,consider-using-f-string,missing-timeout,consider-using-from-import
+disable=import-error,consider-using-f-string,missing-timeout,consider-using-from-import,invalid-name
