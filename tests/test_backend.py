@@ -1,5 +1,5 @@
 import unittest
-import backend as backend
+from Tourism_Recommenders import *
 
 
 class TestBackend(unittest.TestCase):

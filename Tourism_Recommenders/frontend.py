@@ -4,8 +4,9 @@ of our application
 """
 
 import streamlit as st
-import recommender_constants
-import backend
+from Tourism_Recommenders import recommender_constants
+from Tourism_Recommenders import backend
+
 
 r = st.number_input("Minimum rating you want 1-5")
 b = st.number_input("Price level 1-5")
@@ -35,6 +36,6 @@ st.write(google_api_response)
 
 loc = st.text_input("Enter your location or leave blank to use your current location")
 
-res = backend.user_entered_loc(loc)
+res = backend.get_user_entered_loc(loc)
 
 st.write(res)
