@@ -1,5 +1,5 @@
 import unittest
-from Tourism_Recommenders import *
+from Tourism_Recommenders.backend import *
 
 
 class TestBackend(unittest.TestCase):
@@ -8,7 +8,7 @@ class TestBackend(unittest.TestCase):
         query = "Tourist places to visit in Seattle"
         api_key = 'AIzaSyDvXY6zrSDLbP_uNCc7UV1zWqobtkk0l7A'
         fields = 'opening_hours'
-        google_api_response = backend.call_google_api(url, query, api_key, fields)
+        google_api_response = call_google_api(url, query, api_key, fields)
         self.assertTrue(True)
 
 if __name__ == "__main__":
