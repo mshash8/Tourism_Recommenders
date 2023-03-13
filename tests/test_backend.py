@@ -75,7 +75,7 @@ class TestBackend(unittest.TestCase):
         This function performs an edge test to check how the program
         works when one goes "off script". This test accounts for the
         case where the entered address has invalid characters i.e.
-        anything other than english letter, digits, or a comma.
+        anything other than english letters, digits, or commas.
         
         """
         location_as_string = "2$ Capitol Hill^"
