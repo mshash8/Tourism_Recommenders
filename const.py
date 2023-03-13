@@ -1,3 +1,15 @@
+"""
+File to Maintain a List of Constant Values Used in the Backend Code
+
+This script has three important constant values which are needed to run
+the program. Firstly, the weather codes which are constant values
+ranging from 1 to 27 each depicting a particular weather condition
+(clear, fog, rain, snow, etc.). Secondly, the Google Maps API URL,
+which helps access the data of places from the API. Lastly, the encoded
+API key without which the data cannot be obtained.
+
+"""
+
 WEATHER_CODES = {
 '1'	: 'Clear',
 '2'	: 'Fair',
