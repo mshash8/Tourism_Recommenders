@@ -1,0 +1,14 @@
+pip=22
+python=3
+gitpython
+jsonschema
+meteostat
+numpy
+pandas
+requests
+semver
+streamlit
+toml
+geocoder
+geopy
+pylint
