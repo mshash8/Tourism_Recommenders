@@ -9,7 +9,7 @@ datetime package be installed within the Python environment this script
 is being run in.
 
 This script also imports the backend and const modules from the
-recommendation_engine package to call various functions.
+Tourism_Recommenders package to call various functions.
 
 """
 import unittest
