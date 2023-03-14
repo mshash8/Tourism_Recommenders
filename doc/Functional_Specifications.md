@@ -81,7 +81,7 @@ The API returns several variables including the maximum and minimum temperature,
 
 ### *Implicit Use Cases*
 
-#### User Entered Date and Time Authentication:
+#### 1. User Entered Date and Time Authentication:
 
 * User - Enters the desired date and time of travel in the data fields on the landing page.
 
@@ -95,7 +95,7 @@ The API returns several variables including the maximum and minimum temperature,
 
  * Portal - Redirects to the landing page.
 
-#### User Input Location Authentication:
+#### 2. User Input Location Authentication:
 
  * User - Enters the desired destination's location or leaves blank to allow access to the current location.
 
