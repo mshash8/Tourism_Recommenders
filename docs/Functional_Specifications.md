@@ -14,7 +14,7 @@ Our target audience are tourists and travelers who are looking to explore a plac
 
 ### *Level of Computer Experience and Domain Knowledge Needed*
 
-The web tool interface is very simple where the user only needs to input some variables and preferences like price, rating, location, etc. The only requirement from a user is that they must be well versed with browsing the web. Since the purpose of our tool is to not challenge our users, the users are not expected to have any prior knowledge in the background of coding. The only thing needed is a stable internet connection for the web tool to run.
+The web tool interface is very simple where the user only needs to input some variables and preferences like price, rating, location, etc. The only requirement from a user is that they preferably be well versed with browsing the web. Since the purpose of our tool is to not challenge our users, the users are not expected to have any prior knowledge in the background of coding. The only thing needed is a stable internet connection for the web tool to run.
 
 ### *User Stories*
 
