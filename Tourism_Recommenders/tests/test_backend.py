@@ -109,6 +109,20 @@ class TestBackend(unittest.TestCase):
         basic_rules(defining_weather, location)
         self.assertTrue(True)
 
+    def test_basic_rules_avoid(self):
+        """
+        This function checks if the function to obtain the search
+        queries for the Google API using the weather condition codes
+        runs when called. This helps find basic and critical issues
+        before moving on to the other types of testing. The expected
+        output is []
+
+        """
+        defining_weather = 20
+        location = "Seattle"
+        query = basic_rules(defining_weather, location)
+        self.assertEqual(query,[])
+
     #One-Shot Test
     def test_check_haversine_fn(self):
         """
