@@ -1,54 +1,75 @@
 ## Component Specifications
 
-### Component 1 - A frontend module takes in user input and displays information
+### Component 1 - Frontend Module
 
-* Name 
-  - index.html
 * What it does
-  - Hosts the frontend of the tool to take in user inputs and display the requested information.
+  - This module takes in information based on user preferences which are entered using text boxes and drop down menus. These user inputs are then used in order to generate recommendations for the best things for the user to do on that day which is displayed to the user along with the weather at that point. Two types of  recommendations are generated, one  based on the input as well as one based on the weather for that particular day. 
 * Inputs
-  - location, user entered location or current location
+  - User entered location or current location
   - interest, a String that describes what the user is interested in doing(eating at restaurants, activities, etc.)
   - time of visit, A timestamp either entered by the user, or current time
+  - Date of visit, or current day
+  - Maximum price range, scale of 1-5
+  - Minimum rating, scale of 1-5
 * Output
-  - A portal that displays a set of recommendations based on user inputs and specifications
+  - What the weather is on the specified day at the specified time, the recommended activities/ places to visit.  
 * Assumptions
   - Internet connection and the proper working of the Google places API and openweather API
 
-### Component 2 - Constructing an HTTP request to call the Google places API and the openweather API
+### Component 2 -  Google Maps API Module
 
-* Name
-  - getData.py
 * What it does
-  - Constructs an HTTP request based on user inputs and makes an HTTP call to both the APIs
+  - This module constructs the GET request to the google maps API based on the user input and the pre-defined search queries. It then calls the google maps API and returns the results.
 * Inputs
-  - User inputs, a list of the inputs entered by the user
+  - The Maps API URL
+  - List of queries to be searched
+  - The decoded API key
+  - Any optional fields
+  - Latitude of location
+  - Longitude of location
+  - Minimum rating of the recommendation
+  - Maximum price level of the recommendation
 * Outputs
-  - The JSON response obtained from the two API calls
+  - The filtered and sorted dataframe containing the list of recommendations
 * Assumptions
   - Internet connection and the proper working of the Google places API and openweather API
 
-### Component 3 - Parsing the API response text to extract relevant information
+### Component 3 - Weather Condition Module
 
-* Name
-  - textParser.py
 * What it does
-  - Takes in as input the API responses and extracts relevant information and does text pre-processing
+  - Fetches hourly weather data from nearby weather stations. It then extracts the weather condition codes. Finally, the average of these codes are computed to give the weather condition code.
 * Inputs
-  - The JSON responses from the two HTTP responses
+  - Latitude of location
+  - Longitude of location
+  - Date of visit
+  - Time of visit
 * Outputs
-  - A pre-processed text 
+  - The predicted average hourly weather condition.
 
-### Component 4 - Algorithm to generate recommendations  
+### Component 4 - Visit Location Module
 
-* Name
-  - generateRec.py
 * What it does
-  - Takes in the preprocessed information as input and compares it against a set of predefined rules that allow us to make a good recommendation.  
+  - Finds the latitude and longitude values of the location that the user enters. However, if the location input is left blank, then the latitude and longitude of the user’s current location is obtained.  
 * Inputs  
-  - The relevant information from the API responses.  
+  - Location input from user or user’s current location 
 * Outputs  
-  - The recommended tourist spot.
+  - The latitude and the longitude of the input location
+
+### Component 5 - Rules Module
+* What it does 
+  This function curates a list of search queries based on the following rules:
+  - A weather condition code equal to zero means that the weather for that day is uncertain. In such a case, recommendations are made across all categories without taking weather into consideration. 
+  - A weather condition code <= 2 denotes a clear and sunny day. In such cases, beaches, parks, hikes, etc. are recommended. 
+  - A weather condition  code >2 and <= 5 denotes a cloudy day. In such case, cafes, hikes, musuems, etc. are recommended. 
+  - A weather condition code >5 and <= 11, or equal to 17 or 18 signifies  a rainy day. In such case, cafes, musuems, indoor activities etc. are recommended. 
+  - A weather condition code equal to 14, 15 or 21 implies a snowy day. In such cases, cafes, snow hikes, restaurants, etc. are recommended. 
+  - For any other value, the weather is not favourable to go out, and thus no recommendations are made.
+* Inputs 
+  - Average hourly weather condition for the user's preferred date and time
+  - User’s location
+* Outputs 
+  - a list of search queries which allow the Google Maps API to fetch data.
+
 
 ## Preliminary plan(Milestones) - A list of tasks in priority order.
 
