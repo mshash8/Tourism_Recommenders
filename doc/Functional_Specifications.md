@@ -86,8 +86,10 @@ The API returns several variables including the maximum and minimum temperature,
    User - Enters the desired date and time of travel in the data fields on the landing page.
 
    Portal - Authenticates the date and time to ensure that the date is in the future and not beyond 8 days from the current date.
-            If date is valid, shows recommendations.
-            If date is invalid, shows an error.
+            
+   If date is valid, shows recommendations.
+            
+   If date is invalid, shows an error.
             
    User - If date is invalid, user clicks the 'Return' button.
 
@@ -98,8 +100,10 @@ The API returns several variables including the maximum and minimum temperature,
    User - Enters the desired destination's location or leaves blank to allow access to the current location.
 
    Portal - If not blank, the program authenticates the location making sure the address is valid and there are no invalid characters.
-            If location is valid, shows recommendations.
-            If location is invalid or contains invalid characters, shows an error.
+            
+   If location is valid, shows recommendations.
+            
+   If location is invalid or contains invalid characters, shows an error.
             
    User - If location is invalid or contains invalid characters, user clicks the 'Return' button.
 
