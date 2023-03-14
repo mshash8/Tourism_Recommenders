@@ -14,11 +14,11 @@ recommendation_engine package to call various functions.
 """
 import unittest
 from datetime import datetime
-from Tourism_Recommenders.recommendation_engine.backend import\
+from Tourism_Recommenders.backend import\
 call_google_api, call_meteostat_api, decode_api_key,\
 get_latitude_and_longitude, get_user_entered_loc, basic_rules,\
 check_date_invalid, check_address_invalid, check_address_characters, haversine
-import Tourism_Recommenders.recommendation_engine.const as const
+import Tourism_Recommenders.const as const
 
 
 class TestBackend(unittest.TestCase):
@@ -108,6 +108,20 @@ class TestBackend(unittest.TestCase):
         location = "Seattle"
         basic_rules(defining_weather, location)
         self.assertTrue(True)
+
+    def test_basic_rules_avoid(self):
+        """
+        This function checks if the function to obtain the search
+        queries for the Google API using the weather condition codes
+        runs when called. This helps find basic and critical issues
+        before moving on to the other types of testing. The expected
+        output is []
+
+        """
+        defining_weather = 20
+        location = "Seattle"
+        query = basic_rules(defining_weather, location)
+        self.assertEqual(query,[])
 
     #One-Shot Test
     def test_check_haversine_fn(self):

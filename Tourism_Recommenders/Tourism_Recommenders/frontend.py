@@ -16,8 +16,8 @@ the program.
 
 import pandas as pd
 import streamlit as st
-from Tourism_Recommenders.recommendation_engine import const
-from Tourism_Recommenders.recommendation_engine import backend
+import const
+import backend
 
 
 st.set_page_config(layout = "wide")
