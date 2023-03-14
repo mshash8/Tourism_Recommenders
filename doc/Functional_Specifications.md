@@ -49,7 +49,7 @@ The Google Maps API takes several arguments to including a URL, API key and a 'q
 
 The Meteostat Python library provides a simple API for accessing open weather and climate data. The developers, Meteostat, are an agency that maintain an open source record of global climate data. The historical observations and statistics are collected from different public interfaces, most of which are governmental. Among the data sources are national weather services like the National Oceanic and Atmospheric Administration (NOAA) and Germany's national meteorological service (DWD).
 
-The API returns several variables including the maximum and minimum temperature, cloud coverage, precipitation, wind speed, humidity, etc. The variable of importance for us is the 'coco' value or the Weather Condition Code values. The weather condition codes range from 1 to 27 and represent the weather conditions like clear, sunny, rain, fog, snow, sleet, etc. This variable will allow us to make recommendations based on the weather condition.
+The API returns several variables including the maximum and minimum temperature, cloud coverage, precipitation, wind speed, humidity, etc. The variable of importance for us is the 'coco' value or the Weather Condition Code values. The weather condition codes range from 1 to 27 and represent the weather conditions like clear, sunny, rain, fog, snow, sleet, etc. This variable will allow us to make recommendations based on the weather condition. Since the weather API has data only for the next 8 days from the current date, the desired date of travel for the user cannot exceed these dates.
 
 ## **Use Cases**
 
@@ -88,7 +88,6 @@ The API returns several variables including the maximum and minimum temperature,
             If date is valid, shows recommendations.
 
             If date is invalid, shows an error.
-    
    User - If date is invalid, user clicks the 'Return' button.
 
    Portal - Redirects to the landing page.
@@ -102,7 +101,6 @@ The API returns several variables including the maximum and minimum temperature,
             If location is valid, shows recommendations.
 
             If location is invalid or contains invalid characters, shows an error.
-    
    User - If location is invalid or contains invalid characters, user clicks the 'Return' button.
 
    Portal - Redirects to the landing page.
