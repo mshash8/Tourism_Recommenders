@@ -9,7 +9,8 @@ recommendations which are then showed as an output to the user.
 
 The script requires that the 'pandas', 'streamlit' and 'const' packages
 be installed within the Python environment this script is being run in.
-This script also imports the 'backend' module to execute the program.
+This script also imports the 'backend' and 'const' module to execute
+the program.
 
 """
 
