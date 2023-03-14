@@ -1,5 +1,5 @@
 """
-Frontend code for the Weather-Integrated Tourism Recommendation System
+Frontend code for the Weather Integrated Tourism Recommendation System
 
 This script looks into the frontend of the code where user inputs like
 preference, date and time of travel, preferred minimum rating,
@@ -15,8 +15,8 @@ This script also imports the 'backend' module to execute the program.
 
 import pandas as pd
 import streamlit as st
-from Tourism_Recommenders import const
-from Tourism_Recommenders import backend
+import const
+import backend
 
 
 st.set_page_config(layout = "wide")
@@ -25,7 +25,7 @@ var = st.empty()
 
 #create a container that takes user inputs
 with var.container():
-    st.header(":blue[ANITA: Tourism Recommendation System]")
+    st.header(":blue[ANITA: Weather Integrated Tourism Recommendation System]")
     pref = st.selectbox(':violet[Do you have any particular preference for a\
                         place?]', ('None', 'Beaches', 'Cafes and Restaurants',
                         'Hikes and Trails', 'Indoor Activities', 'Museums',
