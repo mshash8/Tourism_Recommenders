@@ -112,7 +112,7 @@ class TestBackend(unittest.TestCase):
         This function checks if the function to obtain the search
         queries for the Google API using the weather condition codes
         runs when called. This helps find basic and critical issues
-        before moving on to the other types of testing.
+        before moving on to the other types of testing. Here, [] is expected.
 
         """
         defining_weather = 20
