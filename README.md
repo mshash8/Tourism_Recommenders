@@ -25,7 +25,7 @@ This project takes data from two different sources - one for extracting the deta
 
 ### *Google Maps API*
 
-The Google Maps API takes several arguments to including a URL, API key and a 'query' which is based on the category of place and the coordinates of the location. It returns a set of values containing variables like place name, address, photos, opening hours, rating, price level, coordinates, etc.
+The Google Maps API takes several arguments including a URL, API key and a 'query' which is based on the category of place and the coordinates of the location. It returns a set of values containing variables like place name, address, photos, opening hours, rating, price level, coordinates, etc.
 
 ### *Meteostat Weather API* 
 
