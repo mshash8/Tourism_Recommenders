@@ -1,4 +1,5 @@
 # Tourism Recommendation Project
+[![Coverage Status](https://coveralls.io/repos/github/mshash8/Tourism_Recommenders/badge.svg)](https://coveralls.io/github/mshash8/Tourism_Recommenders)
 
 ## Project Type - Tool
 This portal uses user inputs (such as location, time of visit, interest, etc.) and current weather conditions for a location to make recommendations for places to visit.  
