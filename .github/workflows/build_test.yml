@@ -53,7 +53,7 @@ jobs:
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          # base-path: Tourism_Recommenders
+          base-path: Tourism_Recommenders
           path-to-lcov: Tourism_Recommenders/coverage.lcov
           flag-name: run ${{ join(matrix.*, ' - ') }}
           parallel: true
