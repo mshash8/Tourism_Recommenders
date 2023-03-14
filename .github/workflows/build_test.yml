@@ -45,6 +45,7 @@ jobs:
           pylint *.py
       - name: Unit tests
         run: |
+          cd Tourism_Recommenders
           coverage run -m unittest discover
           coverage report
           coverage lcov
