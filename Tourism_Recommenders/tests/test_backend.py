@@ -19,7 +19,6 @@ get_latitude_and_longitude, get_user_entered_loc, basic_rules, check_date_invali
 check_address_invalid, check_address_characters, haversine
 import Tourism_Recommenders.const as const
 
-
 class TestBackend(unittest.TestCase):
     """
     This class has multiple functions defined under it where each
@@ -108,7 +107,19 @@ class TestBackend(unittest.TestCase):
         basic_rules(defining_weather, location)
         self.assertTrue(True)
 
-    #One-Shot Test
+    def test_basic_rules_avoid(self):
+        """
+        This function checks if the function to obtain the search
+        queries for the Google API using the weather condition codes
+        runs when called. This helps find basic and critical issues
+        before moving on to the other types of testing.
+
+        """
+        defining_weather = 20
+        location = "Seattle"
+        query = basic_rules(defining_weather, location)
+        self.assertEqual(query, [])
+
     def test_check_haversine_fn(self):
         """
         This function performs a one-shot test to ensure that the code
@@ -125,7 +136,6 @@ class TestBackend(unittest.TestCase):
         dist = haversine(lat1, long1, lat2, long2)
         self.assertAlmostEqual(dist, 0)
 
-    #Edge Tests
     def test_correct_date(self):
         """
         This function performs an edge test to check how the program
@@ -163,7 +173,6 @@ class TestBackend(unittest.TestCase):
         location_as_string = "2$ Capitol Hill^"
         with self.assertRaises(ValueError):
             check_address_characters(location_as_string)
-
 
 if __name__ == "__main__":
     unittest.main()
