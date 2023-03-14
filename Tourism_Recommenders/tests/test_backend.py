@@ -9,7 +9,7 @@ datetime package be installed within the Python environment this script
 is being run in.
 
 This script also imports the backend and const modules from the Tourism
-Recommenders package to call various functions for testing.
+Recommenders package to call various functions.
 
 """
 import unittest
@@ -17,7 +17,7 @@ from datetime import datetime
 from Tourism_Recommenders.backend import call_google_api, call_meteostat_api, decode_api_key, \
 get_latitude_and_longitude, get_user_entered_loc, basic_rules, check_date_invalid, \
 check_address_invalid, check_address_characters, haversine
-import Tourism_Recommenders.const as const
+from Tourism_Recommenders import const
 
 
 class TestBackend(unittest.TestCase):
