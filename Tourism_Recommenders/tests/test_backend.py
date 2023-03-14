@@ -14,7 +14,7 @@ Recommenders package to call various functions.
 """
 import unittest
 from datetime import datetime
-from recommendation_engine.backend import call_google_api, call_meteostat_api, decode_api_key, \
+from Tourism_Recommenders.recommendation_engine.backend import call_google_api, call_meteostat_api, decode_api_key, \
 get_latitude_and_longitude, get_user_entered_loc, basic_rules, check_date_invalid, \
 check_address_invalid, check_address_characters, haversine
 import Tourism_Recommenders.recommendation_engine.const as const
