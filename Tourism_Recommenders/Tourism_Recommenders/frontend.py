@@ -15,8 +15,8 @@ This script also imports the 'backend' module to execute the program.
 
 import pandas as pd
 import streamlit as st
-import const
-import backend
+from Tourism_Recommenders import const
+from Tourism_Recommenders import backend
 
 
 st.set_page_config(layout = "wide")
