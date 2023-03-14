@@ -45,7 +45,7 @@ This project takes data from two different sources - one for extracting the deta
 
 ### *Google Maps API*
 
-The Google Maps API takes several arguments to including a URL, API key and a 'query' which is based on the category of place and the coordinates of the location. It returns a set of values containing variables like place name, address, photos, opening hours, rating, price level, coordinates, etc. The API response is returned as a json object. This data source thus helps us extract real-time data thereby allowing us to provide more accurate recommendations
+The Google Maps API takes several arguments including a URL, API key and a 'query' which is based on the category of place and the coordinates of the location. It returns a set of values containing variables like place name, address, photos, opening hours, rating, price level, coordinates, etc. The API response is returned as a json object. This data source thus helps us extract real-time data thereby allowing us to provide more accurate recommendations
 
 ### *Meteostat Weather API* 
 
