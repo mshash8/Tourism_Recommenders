@@ -114,7 +114,7 @@ class TestBackend(unittest.TestCase):
         with self.assertRaises(ValueError):
             check_address_characters(location_as_string)
 
-    def check_haversine_fn(self):
+    def test_check_haversine_fn(self):
         '''
         Should return 0 as both the locations are the same.
         '''
