@@ -98,7 +98,7 @@ The user inputs the date of their visit, time, maximum price, minimum rating, pr
 
 ### *Interaction Image*
 
-![first_image](/docs/Interaction Diagram.png)
+![interaction_image](/docs/Interaction_Diagram.png)
 
 ## **Preliminary plan(Milestones) - A list of tasks in priority order**
 
