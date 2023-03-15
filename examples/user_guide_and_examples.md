@@ -17,7 +17,6 @@ To access the project folder, use the ‘cd’ command followed by the path to t
 ```
 >> cd path/Tourism_Recommenders
 ```
-
 ### *Step 3:*
 
 Initialize the project with the setup.py file using the following command,
@@ -28,7 +27,6 @@ If the above command does not work, try,
 ```
 >> sudo python setup.py install
 ```
-
 ### *Step 4:*
 
 Since this program requires several packages like meteostat, geocoder, geopy, etc. be installed in your local system, run the below command to install all the required packages,
@@ -36,7 +34,6 @@ Since this program requires several packages like meteostat, geocoder, geopy, et
 ```
 >> pip install -r requirements.txt
 ```
-
 ### *Step 5:*
 
 Now that your packages are all installed, you can run the commands below to access the web tool!
