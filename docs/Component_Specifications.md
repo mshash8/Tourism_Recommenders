@@ -96,6 +96,9 @@ Case: User wants recommendations for activities in Seattle on 16th March 2023.
 
 The user inputs the date of their visit, time, maximum price, minimum rating, preference of activity and location into the Frontend Module. If the user does not input their location, the location module will locate their current location. The Location module returns the latitude and longitude of the location which the Meteostat API module takes as input along with date and time in order to return the weather conditions as a code. This information is then sent to the Basic Rules Module which constructs a list of queries to be sent to the Google Maps API module which returns the recommendations which are displayed to the user.
 
+### *Interaction Image*
+
+![first_image](/docs/Interaction Diagram.png)
 
 ## **Preliminary plan(Milestones) - A list of tasks in priority order**
 
