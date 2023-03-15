@@ -69,6 +69,9 @@ Choose your date of travel from the current date to eight days from the current 
 
 ![fourth_image](/examples/images/4.png)
 
+3. Desired Time of Travel:
+
+Choose your desired time of travel from the dropdown menu. Time options are available in intervals of 15 minutes. The default value for time is the current time.
 
 4. Minimum Preferred Rating:
 
