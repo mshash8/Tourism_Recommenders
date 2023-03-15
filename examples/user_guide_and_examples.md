@@ -11,6 +11,7 @@ Open Command Line and clone the project repository to your local system using th
 >> git clone https://github.com/mshash8/Tourism_Recommenders/tree/main.git
 ```
 *Step 2:*
+
 To access the project folder, use the ‘cd’ command followed by the path to the directory in which the project folder has been cloned. This would look like,
 
 ```
@@ -18,6 +19,7 @@ To access the project folder, use the ‘cd’ command followed by the path to t
 ```
 
 *Step 3:*
+
 Initialize the project with the setup.py file using the following command,
 ```
 >> python setup.py install
@@ -28,6 +30,7 @@ If the above command does not work, try,
 ```
 
 *Step 4:*
+
 Since this program requires several packages like meteostat, geocoder, geopy, etc. be installed in your local system, run the below command to install all the required packages,
 
 ```
@@ -35,6 +38,7 @@ Since this program requires several packages like meteostat, geocoder, geopy, et
 ```
 
 *Step 5:*
+
 Now that your packages are all installed, you can run the commands below to access the web tool!
 
 ```
@@ -73,11 +77,13 @@ Choose the minimum preferred rating you would like for your recommendations. The
 ![fifth_image](/examples/images/5.png)
 
 5. Maximum Preferred Price Level:
+
 Choose the maximum preferred price level you would like for your recommendations. The values range from 1 to 5 with 1 being the lowest and 5 the highest. The default value for the price is 3.
 
 ![sixth_image](/examples/images/6.png)
 
 6. Location:
+
 Enter the location around which you would like your recommendations. The location you enter must be valid and can contain only English letters, digits and commas. If you want the tool to use your current location, leave the field blank. Entering multiple spaces in the field will cause the program to take your current location.
 
 ![seventh_image](/examples/images/7.png)
