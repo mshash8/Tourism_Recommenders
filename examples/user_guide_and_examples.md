@@ -1,14 +1,16 @@
-## ANITA: Weather Integrated Tourism Recommendation System
+## **ANITA: Weather Integrated Tourism Recommendation System**
 
-## User Guide
+## **User Guide**
 
-### Getting Started
-Step 1:
+### **Getting Started**
+
+*Step 1:*
+
 Open Command Line and clone the project repository to your local system using the following command,
 ```
 >> git clone https://github.com/mshash8/Tourism_Recommenders/tree/main.git
 ```
-Step 2:
+*Step 2:*
 To access the project folder, use the ‘cd’ command followed by the path to the directory in which the project folder has been cloned. This would look like,
 
 ```
