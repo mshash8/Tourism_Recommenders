@@ -4,13 +4,13 @@
 
 ## **Getting Started**
 
-*Step 1:*
+### *Step 1:*
 
 Open Command Line and clone the project repository to your local system using the following command,
 ```
 >> git clone https://github.com/mshash8/Tourism_Recommenders/tree/main.git
 ```
-*Step 2:*
+### *Step 2:*
 
 To access the project folder, use the ‘cd’ command followed by the path to the directory in which the project folder has been cloned. This would look like,
 
@@ -18,7 +18,7 @@ To access the project folder, use the ‘cd’ command followed by the path to t
 >> cd path/Tourism_Recommenders
 ```
 
-*Step 3:*
+### *Step 3:*
 
 Initialize the project with the setup.py file using the following command,
 ```
@@ -29,7 +29,7 @@ If the above command does not work, try,
 >> sudo python setup.py install
 ```
 
-*Step 4:*
+### *Step 4:*
 
 Since this program requires several packages like meteostat, geocoder, geopy, etc. be installed in your local system, run the below command to install all the required packages,
 
@@ -37,7 +37,7 @@ Since this program requires several packages like meteostat, geocoder, geopy, et
 >> pip install -r requirements.txt
 ```
 
-*Step 5:*
+### *Step 5:*
 
 Now that your packages are all installed, you can run the commands below to access the web tool!
 
@@ -50,46 +50,46 @@ Now that your packages are all installed, you can run the commands below to acce
 ### *Landing Page:*
 The landing page looks as follows with several input fields like personal preference, date and time of travel, minimum preferred rating, maximum preferred price level, and location.
 
-![first_image](/examples/images/1.png)
+![first_image](/examples/images/image1.png)
 
 ### *Data Fields:*
 The landing page has values filled for most of the variables by default. You can choose a specific value for each of the variables by interacting with them.
-
-![second_image](/examples/images/2.png)
 
 1. Personal Preference:
 
 Choose a preference if any from options like Beaches, Cafes and Restaurants, Hikes and Trails, Indoor Activities, etc. The default value for personal preference is ‘None’.
 
-![third_image](/examples/images/3.png)
+![second_image](/examples/images/image2.png)
 
 2. Desired Date of Travel:
 
 Choose your date of travel from the current date to eight days from the current date. Any date before the current date or after eight days from the current date will show an error.
 
-![fourth_image](/examples/images/4.png)
+![third_image](/examples/images/image3.png)
 
 3. Desired Time of Travel:
 
 Choose your desired time of travel from the dropdown menu. Time options are available in intervals of 15 minutes. The default value for time is the current time.
 
+![fourth_image](/examples/images/image4.png)
+
 4. Minimum Preferred Rating:
 
 Choose the minimum preferred rating you would like for your recommendations. The values range from 1 to 5. The default value for the rating is 3.5.
 
-![fifth_image](/examples/images/5.png)
+![fifth_image](/examples/images/image5.png)
 
 5. Maximum Preferred Price Level:
 
 Choose the maximum preferred price level you would like for your recommendations. The values range from 1 to 5 with 1 being the lowest and 5 the highest. The default value for the price is 3.
 
-![sixth_image](/examples/images/6.png)
+![sixth_image](/examples/images/image6.png)
 
 6. Location:
 
 Enter the location around which you would like your recommendations. The location you enter must be valid and can contain only English letters, digits and commas. If you want the tool to use your current location, leave the field blank. Entering multiple spaces in the field will cause the program to take your current location.
 
-![seventh_image](/examples/images/7.png)
+![seventh_image](/examples/images/image7.png)
 
 Once you have entered all the fields, press ‘Enter!’. The program takes around 5-10 seconds to curate a list of recommendations for you!
 
@@ -97,7 +97,7 @@ Once you have entered all the fields, press ‘Enter!’. The program takes arou
 
 The final output looks as follows! The tool suggests categories of places based on the weather. Since in this case the weather is rainy, it recommends indoor places like cafes, restaurants, museums, etc. If you choose a particular preference, the tool also provides some recommendations pertaining to that. In this case, the preference was set to ‘None’.
 
-![eighth_image](/examples/images/8.png)
+![eighth_image](/examples/images/image8.png)
 
 Press the ‘Return’ button on the top left corner to go back to the landing page.
 
