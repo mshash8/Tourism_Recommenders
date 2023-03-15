@@ -98,7 +98,7 @@ The user inputs the date of their visit, time, maximum price, minimum rating, pr
 
 ![interaction_image](/docs/Interaction_Diagram.png)
 
-## **Preliminary plan(Milestones) - A list of tasks in priority order**
+## **Preliminary plan (Milestones) - A list of tasks in priority order**
 
 ### *Week 1 (14th-21st February, 2023)*
 * Create a comprehensive docs folder with functional specifications and component specifications.
